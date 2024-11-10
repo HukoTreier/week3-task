@@ -6,6 +6,50 @@
     box-sizing: border-box;
 }
 
+/* Modal */
+.modal { 
+    display: none;
+    position: fixed; /* fikseerib elemendi kohale */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(70, 63, 63, 0.555);
+    z-index: 2; /* uus kiht, tuleb ettepoole lehel */
+    top: 0; /* modali nullpunkt */
+    left: 0; /* modali nullpunkt */
+    text-align: center; /* joondab elemendid keskele */
+}
+
+.modal-content { /* heledam osa */
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px; /* teeb modal-content elemendi nurgad ümaraks */
+    animation: zoom-in 1s; /* animatsioon */
+}
+
+.modal-content h1 { /* teeb modali pealkirja valgeks */
+    color: #fff;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);} /* 0% juures suurus 0 */
+    100% {transform: scale(1);} /* 100% juures originaalsuurus */
+}
+
+.closeBtn {
+    float: right; /* joondab risti paremale */
+    cursor: pointer;
+    font-size: 2rem; /* risti suurus */
+}
+
+.movie-poster-modal { /* modal akna pildi laius  */
+    width: 300px;
+}
+
+
+
 html {
     font-family: 'Roboto',sans-serif;
     color: #151515;
