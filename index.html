@@ -49,6 +49,30 @@
             </div>
         </div>
 
+
+        <!--Karusell-->
+            <div class="carousel"> <!--Karuselli konteiner, järgmine pilt tehakse nähtavaks alles klikkides-->
+                 <div class="carousel__item carousel__item--visible"> <!--alguses ainult 1. element nähtav-->
+                     <img src="images/1.jpg" alt="">
+                 </div>
+     
+                 <div class="carousel__item">
+                     <img src="images/2.jpg" alt="">
+                 </div>
+     
+                 <div class="carousel__item">
+                     <img src="images/3.jpg" alt="">
+                 </div>
+     
+                 <div class="carousel__actions"> <!--nuppude lisamine-->
+                     <button id="carousel__button--prev" aria-label="Previous slide"><</button> <!--Nupu id, aria-label et brauser teaks mida teeb. Nooleke vaatab vasakule-->
+                     <button id="carousel__button--next" aria-label="Next slide">></button> <!--Nool vaatab paremale-->
+                 </div>
+     
+            </div> 
+    <!--Karusell-->
+
+
         <footer>
             <h3>Find me to discuss the movie</h3>
              
@@ -66,5 +90,6 @@
     </div>
     
     <script src="scripts/app.js"></script> <!-- Manipuleerib html elemente ja nende omadusi, peab olema dokumendi lõpus, et kätte saada. Leht peab olema juba n.ö alla laetud, siis antakse javascriptile -->
+    <script src="scripts/app2.js"></script>
 </body>
 </html>
